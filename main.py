@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import from_json, col, date_format
 from pyspark.sql.types import *
 
-# Initialize SparkSession
+# Initialize Spark Session
 spark = SparkSession.builder \
     .appName("KafkaStreamingExample") \
     .config("spark.jars.packages", "org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1") \
